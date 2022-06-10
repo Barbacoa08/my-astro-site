@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+import { Example as ReactExample } from '../components/Example'
+import VueExample from '../components/Example.vue'
+import SvelteExample from '../components/SvelteExample/Example.svelte'
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <ul role="list" class="link-card-grid">
+      <Card href="/" title="Home" body="Return home" />
+    </ul>
+
+    <h1>Framework Examples</h1>
+
+    <section>
+      <h2>React Examples</h2>
+
+      <ReactExample client:load />
+    </section>
+
+    <section>
+      <h2>SvelteExample Examples</h2>
+
+      <VueExample client:load />
+    </section>
+
+    <section>
+      <h2>Vue Examples</h2>
+
+      <SvelteExample client:load />
+    </section>
+  </main>
+</Layout>
