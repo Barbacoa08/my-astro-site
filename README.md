@@ -1,4 +1,4 @@
-# [link to netlify]([url](https://astro-play-1.netlify.app/))
+# [link to netlify](https://astro-play-1.netlify.app/)
 
 # Welcome to [Astro](https://astro.build)
 
